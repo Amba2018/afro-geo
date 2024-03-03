@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+body {
+    font-family: "Lora", sans-serif;
+    background-color: #f1f2f8;
+    text-align: center;
+    background-image: url("assets/images/cover-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    max-width: 2000px;
+    min-height: 100vh;
+}
+
+/*heading*/
+
+.heading {
+    font-size: 2.5em;
+    background-color: rgba(228, 205, 205, 0.5);
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+/*main game area*/
+
+.quiz-section {
+    background-color: rgba(223, 209, 209, 0.5);
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#questions-cont {
+    width: 90%;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/*rules display area*/
+#rules-guide {
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+#rule-text-score {
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #ff3535;
+    font-weight: bold;
+}
+
+#finish-text-score {
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #ffffff;
+    font-weight: bold;
+}
+
+/*submit text*/
+
+#info,
+#myLabel {
+    font-size: 20px;
+}
+
+#myName {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#info {
+    font-size: 20px;
+}
+
+
+/*scoring area*/
+
+#correct {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.score-area {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+
+.scoresin-btn {
+    display: inline-block;
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 1px;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.scores-btn {
+    display: inline-block;
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 1px;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.finalscoresin-btn {
+    display: inline-block;
+    padding: 20px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 1px;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.scoresover {
+    display: inline-block;
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 1px;
+    background-color: white;
+}
+
+.timer-btn {
+    display: inline-block;
+    padding: 1px;
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.clicks-btn {
+    display: inline-block;
+    padding: 1px;
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+#timer {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#clicks {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#time {
+    color: red;
+    font-size: 1.2rem;
+}
+
+/*answer section*/
+
+.answer-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 5px auto;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+
+button:hover {
+    background-color: #dadfd8;
+}
+
+.navigationrestart:hover {
+    background-color: #dadfd8;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+
+}
+
+.hide {
+    display: none;
+}
+
+
+/*navigation buttons*/
+
+#start-btn,
+#next-btn {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.navigationrestart {
+    margin: auto;
+    width: 10%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 6px;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #98BAE7;
+        box-shadow: 0 0 5px #98BAE7;
+    }
+
+    50% {
+        background-color: #dadfd8;
+    }
+
+    100% {
+        background-color: #98BAE7;
+        box-shadow: 0 0 5px #98BAE7;
+    }
+}
+
+#quiz-rules {
+    animation: glowing 1300ms infinite;
+}
+
+
+/*404 error page*/
+
+.whoops {
+    width: 85%;
+    max-width: 830px;
+    font-size: xx-large;
+    width: 90%;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 1900px) {
+
+    body {
+        align-items: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: auto;
+    }
+
+    .quiz-section {
+        width: 85%;
+
+    }
+
+    #questions-area {
+        font-size: 1.6rem;
+    }
+
+    #questions-cont {
+        font-size: 1.9rem;
+    }
+
+    #restartplay-btn {
+        width: 18%;
+
+    }
+
+    .btn-flex {
+        height: 10%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .scoresin-btn {
+        font-size: 0.9rem;
+    }
+
+    .scores-btn {
+        font-size: 1rem;
+    }
+
+    .navigationrestart {
+        width: 15%;
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    body {
+        margin: 8px;
+    }
+
+    #rules-guide {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    #questions-area {
+        width: 80%;
+        font-size: 0.9rem;
+
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .scores {
+        padding: 0;
+    }
+
+    #myName {
+        font-size: 0.8rem;
+    }
+
+    #info {
+        font-size: 0.7rem;
+        padding: 0;
+
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .navigation {
+        padding: 0px;
+        margin: -10px;
+    }
+
+    .score-area {
+        font-size: 1px;
+    }
+
+    .clicks-btn,
+    .timer-btn,
+    .scores-btn,
+    .scoresin-btn {
+        font-size: 0.8rem;
+    }
+
+    #clicks,
+    #timer {
+        font-size: 0.8rem;
+    }
+
+    .navigationrestart {
+        width: 34%;
+        font-size: 1.2rem;
+    }
+}
