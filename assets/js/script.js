@@ -90,9 +90,48 @@ function subname() {
     }
 }
 
+//Quiz game
 
-function runGame() { 
-    
+/**
+ * hides the start button, shuffles the questions and adds 10
+ * moves onto the first question
+ */
+function runGame() { // code form Web Dev Simplified on youtube
+    sec = 15; //15 sec timer per question.
+    letsGo.classList.add('hide');
+    quizRules.classList.add('hide'); //this code hides rules and text
+    finishText.classList.add('hide'); //this code  hides rules and text
+    rulesDiv.classList.add('hide'); //this code hides rules and text
+    form.classList.add('hide'); //this code hides rules and text
+    submit.classList.add('hide'); //this code hides rules and text
+    myLabel.classList.add('hide'); //this code hides rules and text
+    infoFront.classList.add('hide'); //this code hides rules and text
+    timershow.classList.remove('hide'); //this code shows timer .
+    scoresshow.classList.remove('hide'); //this code shows score.
+    scoresinshow.classList.remove('hide'); //this code shows score.
+    clicksshow.classList.remove('hide'); //this code shows progress
+    shuffledQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    currentQuestionIndex = 0;
+    clicks += 1; //this code increment number of question completed
+    document.getElementById('clicks').innerHTML = clicks; //this code increment number of question completed
+    questionCont.classList.remove('hide');
+    getNextQuestion();
+}
+
+// nextquestcurrquest code is there to increment the current question on the progress counter.
+
+function nextquestcurrquest() {
+
+    if (questionAnswered) {
+        questionAnswered = false; // Reset the questionAnswered flag
+        sec = 15; // Reset the timer value
+        time = setInterval(myTimer, 1000); // Start the timer again
+    }
+
+    currentQuestionIndex++;
+    getNextQuestion();
+    clicks += 1;  //increment number of question completed
+    document.getElementById('clicks').innerHTML = clicks; 
 }
 
 function getNextQuestion() { 
