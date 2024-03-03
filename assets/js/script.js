@@ -72,8 +72,22 @@ function reset() {
     infoFront.classList.remove('hide');
 }
 
-
+// subname code to enter the user name and then display at the end of the quiz.
 function subname() {
+    const enteredName = document.getElementById('myName').value.trim(); // Remove leading and trailing spaces
+
+    myName = document.getElementById('myName').value;
+    if (enteredName) {
+        myName = enteredName;
+        letsGo.classList.remove('hide');
+        submit.classList.add('hide'); // code added to remove submit button once name has been entered.
+        ruleText.classList.add('hide'); // code added to remove OOPS message when submit is entered.
+        closeBtn.addEventListener('click', reset);
+
+    } else {
+        ruleText.classList.remove('hide');
+        document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter a name and then press submit.`; 
+    }
 }
 
 
