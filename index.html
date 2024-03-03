@@ -13,69 +13,75 @@
 </head>
 
 <body>
-    <!--Game Area-->
-    <div>
+   <!--Game Area-->
+   <div class="quiz-section">
 
-        <!--Question Area-->
-        <div>
-            <div>Question</div>
+    <!--Question Area-->
+    <div id="questions-cont">
+        <div id="questions-area">Question</div>
 
+    </div>
+
+    <!-- rules and submit area -->
+    <div class="quiz-section btn-flex">
+        <p id="info"> Welcone, please enter your username and read the rules of the game to START.</p>
+
+        <!-- <button id="quiz-rules" class="btn">Rules</button> -->
+        <button id="quiz-rules" class="btn">Rules</button>
+
+        <form id="form">
+            <label id="myLabel">Enter your name?</label><br>
+            <input type="text" id="myName" name="fname"><br>
+            <button type="button" id="submit" class="btn">Submit</button>
+        </form>
+
+        <!-- rules -->
+        <div id="rules-guide" class="hide">
+            <h2>Instructions</h2>
+            <p>
+                1- Enter your name and press Submit, then press Start for the game to begin. <br>
+                2- You have 15 seconds to answer each question.<br>
+                3- Timer is displayed under answers.<br>
+                4- <u>If you don't answer in the 15 sec's the quiz will end.</u><br>
+                5- Once an answer is selected, the correct answer will turn green.<br>
+                6- It's required to select an answer to move on to the next question. <br>
+                7- Answer all 10 questions to end game<br>
+            </p>
+
+            <button id="close-btn" class="btn">Close</button>
         </div>
+        <p id="finish-text-score" class="hide"></p>
+    </div>
+    
+    <!--Answer Area-->
+    <div class="answer-choice btn">
+        <p id="rule-text-score" class="hide"></p>
+        <button class="btn hide"></button>
+        <button class="btn hide"></button>
+        <button class="btn hide"></button>
+        <button class="btn hide"></button>
+    </div>
 
-        <!-- rules and submit area -->
-        <div>
-            <p> Welcone, please enter your username and read the rules of the game to START.</p>
-            <button>Rules</button>
-            <form>
-                <label>Enter your name?</label><br>
-                <input><br>
-                <button>Submit</button>
-            </form>
+    <!--Input Area-->
+    <div class="navigation">
+        <button id="start-btn" class="s-btn hide">Start</button>
+        <button id="next-btn" class="next-btn hide">Next</button>
+        <button id="restart-btn" class="restart-btn btn hide">Restart</button>
+    </div>
 
-
-            <!-- rules -->
-            <div>
-                <h2>Instructions</h2>
-                <p>
-
-                </p>
-
-                <button>Close</button>
-            </div>
-
-        </div>
-
-        <!--Answer Area-->
-        <div>
-            <p></p>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
-
-        <!--Input Area-->
-        <div>
-            <button>Start</button>
-            <button>Next</button>
-            <button>Restart</button>
-        </div>
-
-        <!--Score-->
-        <div>
-            <p>Correct Answers: </p>
-            <p>Incorrect Answers: <span>0</span></p>
-            <button>You have <span></span>s to answer </button>
-            <button>Question <span>0</span> of 10</button>
-
-
-        </div>
+    <!--Score-->
+    <div class="score-area">
+        <p class="scores-btn hide" id="scores-btn">Correct Answers: <span id="correct">0</span></p>
+        <p class="scoresin-btn hide" id="scoresin-btn">Incorrect Answers: <span id="incorrect">0</span></p>
+        <button id="timer-btn" class="timer-btn hide">You have <span id="timer"></span>s to answer </button>
+        <button id="clicks-btn" class="clicks-btn hide">Question <span id="clicks">0</span> of 10</button>
 
 
     </div>
 
 
-    <!--links to javascript-->
+</div>
+<!--links to javascript-->
     <script src="assets/js/script.js"></script>
 </body>
 
