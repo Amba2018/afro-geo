@@ -4,6 +4,9 @@
 [Afro Geo](https://amba2018.github.io/afro-geo/)
 
 ## Features
+
+### Site wide
+
 ![Home](assets/images/readme_images/1_Home.png)
 ![Rules](assets/images/readme_images/2_Rules.png)
 ![Username](assets/images/readme_images/3_Username.png)
@@ -20,13 +23,19 @@
 ![GameEnd](assets/images/readme_images/13_GameEnd.png)
 
 
-### Site wide
-
-
 ### Features left to implement
 
 
 ## Wireframes
+![Wireframe](assets/images/readme_images/Wireframe0.png)
+![Wireframe](assets/images/readme_images/Wireframe0a.png)
+![Wireframe](assets/images/readme_images/Wireframe1.png)
+![Wireframe](assets/images/readme_images/Wireframe2.png)
+![Wireframe](assets/images/readme_images/Wireframe3.png)
+![Wireframe](assets/images/readme_images/Wireframe4.png)
+![Wireframe](assets/images/readme_images/Wireframe5.png)
+![Wireframe](assets/images/readme_images/Wireframe6.png)
+![Wireframe](assets/images/readme_images/Wireframe6a.png)
 
 
 ## Technolgies
