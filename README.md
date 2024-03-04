@@ -1,4 +1,4 @@
-# Afro Geo
+# Afro Geo Game
 ![Afro Geo](assets/images/readme_images/0_Responsive.png)
 
 [Afro Geo](https://amba2018.github.io/afro-geo/)
