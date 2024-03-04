@@ -1,7 +1,6 @@
 # Afro Geo Game
+[Afro Geo](https://amba2018.github.io/afro-geo/) is a game built with JavaScript to teach children geography by guessing the capital city of various countries. It is a fun and engaging way to learn about the world and its countries. View the live site [here](https://amba2018.github.io/afro-geo/).
 ![Afro Geo](assets/images/readme_images/0_Responsive.png)
-
-[Afro Geo](https://amba2018.github.io/afro-geo/)
 
 ## Features
 
