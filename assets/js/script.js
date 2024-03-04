@@ -134,13 +134,30 @@ function nextquestcurrquest() {
     document.getElementById('clicks').innerHTML = clicks; 
 }
 
-function getNextQuestion() { 
-    
+/**
+ * resets and shuffles questions
+ */
+function getNextQuestion() {  // code form Web Dev Simplified on youtube, link in README
+    defaultState();
+    displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-function displayQuestion(question) { 
-    
+// Gets the questions and answers from the array and displays them
+
+function displayQuestion(question) { // code form Web Dev Simplified on youtube
+    questionArea.innerText = question.question;
+    question.answers.forEach((answer) => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', checkAnswer);
+        answersArea.appendChild(button);
+    });
 }
+
 
 function defaultState() {  
     
