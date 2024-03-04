@@ -286,4 +286,13 @@ function timeoutendGame() {
     setTimeout(restart, 5000); //* setTimeout(myFunction, 5 seconds);
 }
 
+//restart code for completeing the quiz
+function restart() {
+    return window.location.assign('resetgameover.html');
+}
 
+//endGameover code for the quiz timing out
+function endGameover() {
+    return window.location.assign('gameover.html');
+
+}
