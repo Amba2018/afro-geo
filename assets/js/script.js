@@ -158,22 +158,101 @@ function displayQuestion(question) { // code form Web Dev Simplified on youtube
     });
 }
 
+//replace the old answers for new ones
 
-function defaultState() {  
-    
+function defaultState() {  // code form Web Dev Simplified on youtube
+    nextBut.classList.add('hide');
+    while (answersArea.firstChild) {
+        answersArea.removeChild(answersArea.firstChild);
+    }
 }
 
+/**checks user answer and increments score if correct
+ * increments incorrect score if wrong
+ * highlights colours for right and wrong buttons
+ */
 function checkAnswer(event) {
-    
+    // code form Web Dev Simplified on youtube
+    const clickedButton = event.target;
+    const correct = clickedButton.dataset.correct;
+
+    if (!clickedButton.classList.contains('answered')) {
+        clickedButton.classList.add('answered'); // Add a class to mark this button as answered
+
+        if (correct) score++; //increment score and display at end of quiz.
+
+        clearInterval(time); // Stop the timer
+        questionAnswered = true;
+
+        setStatusClass(document.body, correct);
+        Array.from(answersArea.children).forEach((button) => {
+            setStatusClass(button, button.dataset.correct);
+            button.removeEventListener('click', checkAnswer); // Remove the event listener to prevent further clicks
+        });
+        if (shuffledQuestions.length > currentQuestionIndex + 1) {
+            nextBut.classList.remove('hide');
+        } else {
+            sec = 15; //insure the quiz dosen't time out
+            timershow.classList.add('hide'); // hide the timer
+            setTimeout(endscore, 5000); // code for the user to check there final answer.
+
+            function endscore() {
+                // This nested function to give the user a chance to see their scores.
+                scoresinshow.classList.add('hide');
+                scoresshow.classList.add('hide');
+                answersArea.classList.add('hide');
+                clicksshow.classList.add('hide');
+                timershow.classList.add('hide');
+                questionCont.classList.add('hide');
+                finishText.classList.remove('hide');
+                restartBut.classList.add('hide');
+
+                if (score >= 8) {
+                    // if else code to display comment, name and score at end of game.
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Your World knowledge is Amazing ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
+                } else if (score >= 6 && score < 8) {
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
+                } else if (score >= 4 && score < 6) {
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
+                } else {
+                    document.getElementById(
+                        'finish-text-score'
+                    ).innerHTML = `Too bad ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for playing the Game`;
+                }
+                setTimeout(endGameover, 10000);
+            }
+        }
+
+        if (correct) {
+            incrementCorrectScore();
+        } else {
+            incrementWrongAnswer();
+        }
+    }
 }
 
 function setStatusClass(element, correct) {
-  
+    // code form Web Dev Simplified on youtube
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    }
 }
 
 function clearStatusClass(element) {
-   
+    // code form Web Dev Simplified on youtube
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
+
 
 function incrementCorrectScore() {
     
