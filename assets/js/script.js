@@ -253,14 +253,21 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 }
 
+/**
+ * Gets the current score from the DOM and increments it by 1.
+ * Code from CI loves maths.
+ */
 
 function incrementCorrectScore() {
-    
+    let oldScore = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = oldScore + 1; 
 }
 
 function incrementWrongAnswer() {
- 
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = oldScore + 1;
 }
+
 
 
 
