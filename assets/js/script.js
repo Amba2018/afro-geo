@@ -268,6 +268,22 @@ function incrementWrongAnswer() {
     document.getElementById('incorrect').innerText = oldScore + 1;
 }
 
+// timeoutendGame code for when the game timer is up, it jumps to here.
+function timeoutendGame() {
+    document.getElementById('questions-area').innerHTML = `
+            <strong><em>Unfortunately, you have being timed out. Game Ended!</em></strong>
+            <br>
+            `;
 
+    timershow.classList.add('hide');
+    answersArea.classList.add('hide');
+    scoresinshow.classList.add('hide');
+    clicksshow.classList.add('hide');
+    quizRules.classList.add('hide');
+    infoFront.classList.add('hide');
+    form.classList.add('hide');
+    finishText.classList.add('hide');
+    setTimeout(restart, 5000); //* setTimeout(myFunction, 5 seconds);
+}
 
 
