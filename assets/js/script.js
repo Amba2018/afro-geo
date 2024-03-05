@@ -96,11 +96,11 @@ function subname() {
  * hides the start button, shuffles the questions and adds 10
  * moves onto the first question
  */
-function runGame() { // code form Web Dev Simplified on youtube
+function runGame() { // code from Web Dev Simplified on youtube
     sec = 15; //15 sec timer per question.
     letsGo.classList.add('hide');
     quizRules.classList.add('hide'); //this code hides rules and text
-    finishText.classList.add('hide'); //this code  hides rules and text
+    finishText.classList.add('hide'); //this code hides rules and text
     rulesDiv.classList.add('hide'); //this code hides rules and text
     form.classList.add('hide'); //this code hides rules and text
     submit.classList.add('hide'); //this code hides rules and text
@@ -137,14 +137,14 @@ function nextquestcurrquest() {
 /**
  * resets and shuffles questions
  */
-function getNextQuestion() {  // code form Web Dev Simplified on youtube, link in README
+function getNextQuestion() {  // code from Web Dev Simplified on youtube
     defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 // Gets the questions and answers from the array and displays them
 
-function displayQuestion(question) { // code form Web Dev Simplified on youtube
+function displayQuestion(question) { // code from Web Dev Simplified on youtube
     questionArea.innerText = question.question;
     question.answers.forEach((answer) => {
         const button = document.createElement('button');
@@ -160,7 +160,7 @@ function displayQuestion(question) { // code form Web Dev Simplified on youtube
 
 //replace the old answers for new ones
 
-function defaultState() {  // code form Web Dev Simplified on youtube
+function defaultState() {  // code from Web Dev Simplified on youtube
     nextBut.classList.add('hide');
     while (answersArea.firstChild) {
         answersArea.removeChild(answersArea.firstChild);
@@ -172,7 +172,7 @@ function defaultState() {  // code form Web Dev Simplified on youtube
  * highlights colours for right and wrong buttons
  */
 function checkAnswer(event) {
-    // code form Web Dev Simplified on youtube
+    // code from Web Dev Simplified on youtube
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
 
@@ -192,7 +192,7 @@ function checkAnswer(event) {
         if (shuffledQuestions.length > currentQuestionIndex + 1) {
             nextBut.classList.remove('hide');
         } else {
-            sec = 15; //insure the quiz dosen't time out
+            sec = 15; //insure the game dosen't time out
             timershow.classList.add('hide'); // hide the timer
             setTimeout(endscore, 5000); // code for the user to check there final answer.
 
@@ -238,7 +238,7 @@ function checkAnswer(event) {
 }
 
 function setStatusClass(element, correct) {
-    // code form Web Dev Simplified on youtube
+    // code from Web Dev Simplified on youtube
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
@@ -248,7 +248,7 @@ function setStatusClass(element, correct) {
 }
 
 function clearStatusClass(element) {
-    // code form Web Dev Simplified on youtube
+    // code from Web Dev Simplified on youtube
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
@@ -286,12 +286,12 @@ function timeoutendGame() {
     setTimeout(restart, 5000); //* setTimeout(myFunction, 5 seconds);
 }
 
-//restart code for completeing the quiz
+//restart code for completeing the game
 function restart() {
     return window.location.assign('resetgameover.html');
 }
 
-//endGameover code for the quiz timing out
+//endGameover code for the game timing out
 function endGameover() {
     return window.location.assign('gameover.html');
 
