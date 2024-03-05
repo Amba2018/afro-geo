@@ -96,7 +96,8 @@ function subname() {
  * hides the start button, shuffles the questions and adds 10
  * moves onto the first question
  */
-function runGame() { // code from Web Dev Simplified on youtube
+// code from Web Dev Simplified on youtube
+function runGame() {
     sec = 15; //15 sec timer per question.
     letsGo.classList.add('hide');
     quizRules.classList.add('hide'); //this code hides rules and text
@@ -137,14 +138,15 @@ function nextquestcurrquest() {
 /**
  * resets and shuffles questions
  */
-function getNextQuestion() {  // code from Web Dev Simplified on youtube
+// code from Web Dev Simplified on youtube
+function getNextQuestion() {
     defaultState();
     displayQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 // Gets the questions and answers from the array and displays them
-
-function displayQuestion(question) { // code from Web Dev Simplified on youtube
+// code from Web Dev Simplified on youtube
+function displayQuestion(question) {
     questionArea.innerText = question.question;
     question.answers.forEach((answer) => {
         const button = document.createElement('button');
@@ -159,8 +161,8 @@ function displayQuestion(question) { // code from Web Dev Simplified on youtube
 }
 
 //replace the old answers for new ones
-
-function defaultState() {  // code from Web Dev Simplified on youtube
+// code from Web Dev Simplified on youtube
+function defaultState() {
     nextBut.classList.add('hide');
     while (answersArea.firstChild) {
         answersArea.removeChild(answersArea.firstChild);
@@ -238,8 +240,8 @@ function endscore() {
     setTimeout(endGameover, 10000);
 }
 
+// code from Web Dev Simplified on youtube
 function setStatusClass(element, correct) {
-    // code from Web Dev Simplified on youtube
     clearStatusClass(element);
     if (correct) {
         element.classList.add('correct');
@@ -248,8 +250,8 @@ function setStatusClass(element, correct) {
     }
 }
 
+// code from Web Dev Simplified on youtube
 function clearStatusClass(element) {
-    // code from Web Dev Simplified on youtube
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
