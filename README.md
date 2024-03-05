@@ -6,6 +6,9 @@
 
 ### Site wide
 
+* Home Menu
+    * This is the main page where users are welcome and introduced to the game.
+    * 
 ![Home](assets/images/readme_images/1_Home.png)
 ![Rules](assets/images/readme_images/2_Rules.png)
 ![Username](assets/images/readme_images/3_Username.png)
