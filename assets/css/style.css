@@ -316,7 +316,7 @@ button:hover {
     }
 
     .heading {
-        width: 65%;
+        width: 90%;
         font-size: 1.2rem;
     }
 
@@ -368,8 +368,8 @@ button:hover {
     }
 
     .heading {
-        width: 65%;
-        font-size: 1.2rem;
+        width: 90%;
+        font-size: 1rem;
     }
 
     #rules-guide {
