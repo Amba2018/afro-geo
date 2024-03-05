@@ -54,7 +54,7 @@ function showrules() {
 function myTimer() {
     document.getElementById('timer').innerHTML = sec;
     sec--;
-    if (sec < -1) {   
+    if (sec < -1) {
         clearInterval(time);
         timeoutendGame();
     }
@@ -86,7 +86,7 @@ function subname() {
 
     } else {
         ruleText.classList.remove('hide');
-        document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter a name and then press submit.`; 
+        document.getElementById('rule-text-score').innerHTML = `OOPS, you didn't enter your name. Please enter a name and then press submit.`;
     }
 }
 
@@ -131,7 +131,7 @@ function nextquestcurrquest() {
     currentQuestionIndex++;
     getNextQuestion();
     clicks += 1;  //increment number of question completed
-    document.getElementById('clicks').innerHTML = clicks; 
+    document.getElementById('clicks').innerHTML = clicks;
 }
 
 /**
@@ -194,39 +194,8 @@ function checkAnswer(event) {
         } else {
             sec = 15; //insure the game dosen't time out
             timershow.classList.add('hide'); // hide the timer
-            setTimeout(endscore, 5000); // code for the user to check there final answer.
-
-            function endscore() {
-                // This nested function to give the user a chance to see their scores.
-                scoresinshow.classList.add('hide');
-                scoresshow.classList.add('hide');
-                answersArea.classList.add('hide');
-                clicksshow.classList.add('hide');
-                timershow.classList.add('hide');
-                questionCont.classList.add('hide');
-                finishText.classList.remove('hide');
-                restartBut.classList.add('hide');
-
-                if (score >= 8) {
-                    // if else code to display comment, name and score at end of game.
-                    document.getElementById(
-                        'finish-text-score'
-                    ).innerHTML = `Your World knowledge is Amazing ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
-                } else if (score >= 6 && score < 8) {
-                    document.getElementById(
-                        'finish-text-score'
-                    ).innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
-                } else if (score >= 4 && score < 6) {
-                    document.getElementById(
-                        'finish-text-score'
-                    ).innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
-                } else {
-                    document.getElementById(
-                        'finish-text-score'
-                    ).innerHTML = `Too bad ${myName}. It's all about trying. You have scored ${score} out of 10. Thank you for playing the Game`;
-                }
-                setTimeout(endGameover, 10000);
-            }
+            setTimeout(endscore, 5000); // code for the user to check their final answer.
+            endscore();
         }
 
         if (correct) {
@@ -235,6 +204,38 @@ function checkAnswer(event) {
             incrementWrongAnswer();
         }
     }
+}
+
+// This nested function to give the user a chance to see their scores.
+function endscore() {
+    scoresinshow.classList.add('hide');
+    scoresshow.classList.add('hide');
+    answersArea.classList.add('hide');
+    clicksshow.classList.add('hide');
+    timershow.classList.add('hide');
+    questionCont.classList.add('hide');
+    finishText.classList.remove('hide');
+    restartBut.classList.add('hide');
+
+    if (score >= 8) {
+        // if else code to display comment, name and score at end of game.
+        document.getElementById(
+            'finish-text-score'
+        ).innerHTML = `Your World knowledge is Amazing ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
+    } else if (score >= 6 && score < 8) {
+        document.getElementById(
+            'finish-text-score'
+        ).innerHTML = `Great work ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
+    } else if (score >= 4 && score < 6) {
+        document.getElementById(
+            'finish-text-score'
+        ).innerHTML = `Good effort ${myName}. You have scored ${score} out of 10. Thank you for playing the Game.`;
+    } else {
+        document.getElementById(
+            'finish-text-score'
+        ).innerHTML = `Too bad ${myName}. You didn't even try. You have scored ${score} out of 10. Thank you for playing the Game`;
+    }
+    setTimeout(endGameover, 10000);
 }
 
 function setStatusClass(element, correct) {
@@ -260,7 +261,7 @@ function clearStatusClass(element) {
 
 function incrementCorrectScore() {
     let oldScore = parseInt(document.getElementById('correct').innerText);
-    document.getElementById('correct').innerText = oldScore + 1; 
+    document.getElementById('correct').innerText = oldScore + 1;
 }
 
 function incrementWrongAnswer() {
