@@ -171,8 +171,8 @@ function defaultState() {  // code from Web Dev Simplified on youtube
  * increments incorrect score if wrong
  * highlights colours for right and wrong buttons
  */
+// code from Web Dev Simplified on youtube
 function checkAnswer(event) {
-    // code from Web Dev Simplified on youtube
     const clickedButton = event.target;
     const correct = clickedButton.dataset.correct;
 
