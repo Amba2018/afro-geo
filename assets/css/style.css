@@ -4,13 +4,13 @@ body {
     font-family: "Lora", sans-serif;
     background-color: #f1f2f8;
     text-align: center;
-    background-image:url("../images/cover.jpg");
+    background-image: url("../images/cover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
     max-width: 2000px;
     min-height: 100vh;
-    }
+}
 
 /*heading*/
 
@@ -96,6 +96,7 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     font-size: 1.2rem;
+    width: 60%;
 }
 
 #info {
@@ -117,31 +118,21 @@ body {
 
 .score-area {
     margin: 0 auto;
-    width: 60%;
+    /*width: 60%;*/
     font-size: 1.2rem;
-}
-
-
-.scoresin-btn {
-    display: inline-block;
-    padding: 20px;
-    width: 40%;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 1px;
-    background-color: white;
-    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .scores-btn {
     display: inline-block;
-    padding: 20px;
-    width: 40%;
+    width: 65%;
     border-radius: 5px;
     border: 1px solid black;
-    padding: 1px;
     background-color: white;
-    font-size: 1.2rem;
+    padding: 1px;
+    margin: 5px;
 }
 
 .finalscoresin-btn {
@@ -228,7 +219,6 @@ button {
     font-size: 1.5rem;
 }
 
-
 button:hover {
     background-color: #dadfd8;
 }
@@ -255,13 +245,13 @@ button:hover {
 
 #start-btn,
 #next-btn {
-    width: 30%;
+    width: 60%;
     margin: 10px 0;
 }
 
 .navigationrestart {
     margin: auto;
-    width: 10%;
+    width: 65%;
     border-radius: 10px;
     border: 1px solid black;
     padding: 6px;
@@ -325,6 +315,11 @@ button:hover {
         margin-left: auto;
     }
 
+    .heading {
+        width: 65%;
+        font-size: 1.2rem;
+    }
+
     .quiz-section {
         width: 85%;
 
@@ -355,16 +350,12 @@ button:hover {
         font-size: 1rem;
     }
 
-    .scoresin-btn {
-        font-size: 0.9rem;
-    }
-
     .scores-btn {
         font-size: 1rem;
     }
 
     .navigationrestart {
-        width: 15%;
+        width: 65%;
         font-size: 1.8rem;
     }
 
@@ -374,6 +365,11 @@ button:hover {
 
     body {
         margin: 8px;
+    }
+
+    .heading {
+        width: 65%;
+        font-size: 1.2rem;
     }
 
     #rules-guide {
@@ -420,8 +416,7 @@ button:hover {
 
     .clicks-btn,
     .timer-btn,
-    .scores-btn,
-    .scoresin-btn {
+    .scores-btn {
         font-size: 0.8rem;
     }
 
@@ -431,7 +426,7 @@ button:hover {
     }
 
     .navigationrestart {
-        width: 34%;
+        width: 60%;
         font-size: 1.2rem;
     }
 }
