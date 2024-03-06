@@ -111,3 +111,64 @@ Lighthouse was used (accessed through Developer Tools in Chrome) to analyse for 
 </details>
 
 
+## Browser Compatibility
+
+---
+
+This website was tested on Chrome, Microsoft Edge, and Firefox for desktop.
+
+The website was tested on Safari for mobile and tablet.
+
+
+## Responsivity
+
+---
+
+### Responsiveness
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in WCAG 2.1 Reflow criteria for responsive design on Chrome, Firefox and Edge browsers.
+
+Responsiveness was tested through Chrome Developer tools. The devices tested include:
+
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- Pixel 7
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Air
+- iPad Mini
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Samsung Galaxy A51
+
+I was able to directly test the website on Samsung Galaxy A53, Samsung Galaxy S20+ and iPhone 14 Pro.
+
+Steps to test:
+
+1. Open browser 'Afro Geo'
+2. Open the developer tools (right click and select inspect)
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5.  Click and drag the responsive window to maximum width.
+
+
+Expected:
+
+Website is responsive on all screen sizes.
+
+Actual:
+
+Website behaved as expected with the exception of switching to the viewport size to 320px. 
+
+
+## Issues/ Bugs Found & Resolved
+
+---
+
+### Validation Issues
+
+The initial W3S Mark Up Validation returned some errors because there were some unclosed tags. But I was able to resolve all of them on time.
+The initial JsHint test results returned with a lot of "warnings" because of missing commas and unused variables. I was able to fix all of them.
+
