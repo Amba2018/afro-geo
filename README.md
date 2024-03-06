@@ -57,10 +57,10 @@
 
 
 ### Features left to implement
-    * Add more countries and their capital to the game to increase the randomisation of questions.
-    * Add great and fun geographical cities.
-    * Add celestial constellation to incease geographical interest.
-    * Add images of nature for identifying.
+- Add more countries and their capital to the game to increase the randomisation of questions.
+- Add great and fun geographical cities.
+- Add celestial constellation to incease geographical interest.
+- Add images of nature for identifying.
 
 
 ## Wireframes
