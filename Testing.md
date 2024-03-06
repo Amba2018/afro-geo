@@ -44,6 +44,10 @@ Game Over Page
 
 ![HTML Validator Game Over Page](assets/images/readme_images/GameOver_Validator.png)
 
+404 Page
+
+![HTML Validator 404 Page](assets/images/readme_images/404_Validator.png)
+
 </details>
 
 
@@ -107,6 +111,12 @@ Lighthouse was used (accessed through Developer Tools in Chrome) to analyse for 
 <summary>GameOver Page</summary>
 
 ![Lighthouse GameOver page](assets/images/readme_images/Lighthouse2.png)
+
+</details>
+<details>
+<summary>404 Page</summary>
+
+![Lighthouse 404 page](assets/images/readme_images/Lighthouse4.png)
 
 </details>
 
