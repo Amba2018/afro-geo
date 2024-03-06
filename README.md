@@ -1,8 +1,13 @@
 # Afro Geo Game
+
+---
+
 [Afro Geo](https://amba2018.github.io/afro-geo/) is a game built with JavaScript to teach children geography by guessing the capital city of various countries. It is a fun and engaging way to learn about the world and its countries. View the live site [here](https://amba2018.github.io/afro-geo/).
 ![Afro Geo](assets/images/readme_images/0_Responsive.png)
 
 ## Features
+
+---
 
 ### Site wide
 
@@ -66,6 +71,8 @@
 
 ## Wireframes
 
+---
+
 ### Home 
 ![Wireframe](assets/images/readme_images/Wireframe0.png)
 ![Wireframe](assets/images/readme_images/Wireframe0a.png)
@@ -91,6 +98,9 @@
 
 
 ## Technolgies
+
+---
+
 * HTML
     * The structure of the Website was developed using HTML as the main language.
 * CSS
@@ -114,12 +124,17 @@
 
 
 ## Testing
+
+---
+
 Testing was done throughout the entire build. I utilised Chrome Developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
 See [Testing.md](Testing.md) for an overview of website testing and debugging.
 
 
 ## Deployment
+
+---
 
 ### Version Control
 
@@ -162,6 +177,9 @@ All content are for educational purposes.
 
 
 ## Credits 
+
+---
+
 - Love-maths
     * Insight from this tutorial was used.
 - W3School JavaScript Tutorial 
