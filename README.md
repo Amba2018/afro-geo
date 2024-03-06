@@ -61,6 +61,7 @@
 - Add great and fun geographical cities.
 - Add celestial constellation to incease geographical interest.
 - Add images of nature for identifying.
+- Add records of previous score.
 
 
 ## Wireframes
