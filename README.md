@@ -112,26 +112,59 @@
     * The website was developed using Gitpod IDE
 
 
-
 ## Testing
+Testing was done throughout the entire build. I utilised Chrome Developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
-
-### Responsiveness
-
-
-### Accessibility
+See [Testing.md](testing.md) for an overview of website testing and debugging.
 
 
 ## Deployment
 
-
 ### Version Control
 
+The site was created using the Gitpod code editor and pushed to github to the remote repository ‘afro-tour’.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add .``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
 
 ### Deployment to Github Pages
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully. 
+
+The live link can be found here - https://amba2018.github.io/afro-geo/
 
 ### Clone the Repository Code Locally
 
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
+
+The project will now of been cloned on your local machine for use.
+
+### Content 
+
+All content are for educational purposes.
+
 
 ## Credits 
+- Love-maths
+    * Insight from this tutorial was used.
+- W3School JavaScript Tutorial 
+- Web Dev Simplfied Tutorial
+- Code Institute-Slack Channel
+- [PdoyleC](https://github.com/PdoyleC)
+- [Gareth-McGirr](https://github.com/Gareth-McGirr) my mentor provided great advise in times of need.
