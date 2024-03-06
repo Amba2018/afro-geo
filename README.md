@@ -116,7 +116,7 @@
 ## Testing
 Testing was done throughout the entire build. I utilised Chrome Developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
-See [Testing.md](testing.md) for an overview of website testing and debugging.
+See [Testing.md](Testing.md) for an overview of website testing and debugging.
 
 
 ## Deployment
